@@ -4,11 +4,13 @@ namespace App\Models;
 
 use Illuminate\Support\Facades\DB;
 use Illuminate\Database\Eloquent\Model;
+use Spatie\MediaLibrary\HasMedia;
+use Spatie\MediaLibrary\InteractsWithMedia;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 
-class mobil extends Model
+class Mobil extends Model implements HasMedia
 {
-    use HasFactory;
+    use HasFactory, InteractsWithMedia;
 
     protected $primaryKey = 'id_mobil';
     public $incrementing = false;
@@ -33,6 +35,13 @@ class mobil extends Model
         });
     }
 
+    public function registerMediaCollections(): void
+    {
+        $this
+            ->addMediaCollection('images')
+            ->singleFile();
+    }
+
     public function generateCustomId()
     {
         $prefix = 'MBL';
@@ -41,15 +50,20 @@ class mobil extends Model
         do {
             DB::beginTransaction();
 
-            $lastRecord = DB::table('mobils')->lockForUpdate()->orderBy('id_mobil', 'desc')->first();
-            $lastIdNumber = $lastRecord ? intval(substr($lastRecord->id_mobil, strlen($prefix))) : 0;
-            $newIdNumber = $lastIdNumber + 1;
-            $newId = $prefix . str_pad($newIdNumber, $length, '0', STR_PAD_LEFT);
+            try {
+                $lastRecord = DB::table('mobils')->lockForUpdate()->orderBy('id_mobil', 'desc')->first();
+                $lastIdNumber = $lastRecord ? intval(substr($lastRecord->id_mobil, strlen($prefix))) : 0;
+                $newIdNumber = $lastIdNumber + 1;
+                $newId = $prefix . str_pad($newIdNumber, $length, '0', STR_PAD_LEFT);
 
-            DB::commit();
-
+                DB::commit();
+            } catch (\Exception $e) {
+                DB::rollBack();
+                throw $e;
+            }
         } while (self::where('id_mobil', $newId)->exists());
 
         return $newId;
     }
 }
+

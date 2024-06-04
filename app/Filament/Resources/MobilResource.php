@@ -2,28 +2,19 @@
 
 namespace App\Filament\Resources;
 
-use Filament\Forms;
 use Filament\Tables;
 use App\Models\Mobil;
 use Filament\Forms\Form;
 use Filament\Tables\Table;
 use Filament\Support\RawJs;
-use Filament\Actions\EditAction;
 use Filament\Resources\Resource;
 use Filament\Forms\Components\Card;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Forms\Components\TextInput;
-use Filament\Forms\Components\FileUpload;
-use Illuminate\Database\Eloquent\Builder;
-use Filament\Tables\Actions\BulkActionGroup;
-use Filament\Tables\Actions\DeleteBulkAction;
 use App\Filament\Resources\MobilResource\Pages;
-use Illuminate\Database\Eloquent\SoftDeletingScope;
-use App\Filament\Resources\MobilResource\Pages\EditMobil;
-use App\Filament\Resources\MobilResource\Pages\ListMobils;
-use App\Filament\Resources\MobilResource\RelationManagers;
-use App\Filament\Resources\MobilResource\Pages\CreateMobil;
 use Filament\Forms\Components\SpatieMediaLibraryFileUpload;
+
+use function Laravel\Prompts\text;
 
 class MobilResource extends Resource
 {
@@ -41,7 +32,14 @@ class MobilResource extends Resource
                         TextInput::make('nama_mobil')->required(),
                         TextInput::make('merk')->required(),
                         TextInput::make('kapasitas')->numeric()->required(),
-                        TextInput::make('harga')->prefix('RP')->required()->mask(RawJs::make('$money($input)'))->stripCharacters(',')->numeric()->default(1000000),
+                        TextInput::make('harga')
+                            ->prefix('RP')
+                            ->required()
+                            ->mask(RawJs::make('$money($input)'))
+                            ->stripCharacters(',')
+                            ->numeric()
+                            ->default(1000000),
+                        TextInput::make('image_url'),
                     ])
             ]);
     }
@@ -66,7 +64,7 @@ class MobilResource extends Resource
             ])
             ->bulkActions([
                 Tables\Actions\BulkActionGroup::make([
-                Tables\Actions\DeleteBulkAction::make(),
+                    Tables\Actions\DeleteBulkAction::make(),
                 ]),
             ]);
     }

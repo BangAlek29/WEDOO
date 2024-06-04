@@ -41,3 +41,5 @@ Route::get('/transaksi', function () {
 Route::get('/contact', function () {
     return view('livewire.contact');
 })->name('contact.page');
+
+
