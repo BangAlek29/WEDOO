@@ -43,7 +43,8 @@ class CateringResource extends Resource
                 TextInput::make('nama')->required(),
                 TextInput::make('kontak')->required(),
                 TextInput::make('biaya')->prefix('RP')->required()->mask(RawJs::make('$money($input)'))->stripCharacters(',')->numeric()->default(1000000),
-                RichEditor::make('deskripsi')->nullable(),               
+                RichEditor::make('deskripsi')->nullable(),
+                TextInput::make('image_url'),               
                 ])
             ]);
     }

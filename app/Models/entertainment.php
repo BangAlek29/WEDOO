@@ -22,6 +22,7 @@ class entertainment extends Model
         'kategori',
         'ketersediaan',
         'deskripsi',
+        'image_url',
     ];
 
     const KETERSEDIAAN_OPSI = [

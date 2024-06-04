@@ -17,6 +17,6 @@ class Akomodasis extends Component
     }
     public function render()
     {
-        return view('livewire.akomodasi');
+        return view('livewire.akomodasi',['akomodasis' => $this->akomodasis]);
     }
 }

@@ -18,6 +18,7 @@ class catering extends Model
         'kontak',
         'biaya',
         'deskripsi',
+        'image_url',
     ];
 
     protected static function boot()

@@ -22,6 +22,7 @@ class dokumentasi extends Model
         'biaya',
         'ketersediaan',
         'deskripsi',
+        'image_url',
     ];
 
     const KETERSEDIAAN_OPSI = [

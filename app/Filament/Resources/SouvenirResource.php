@@ -40,7 +40,8 @@ class SouvenirResource extends Resource
                             'Tersedia' => 'success',
                         ])
                         ->inline(),
-                        RichEditor::make('deskripsi')->nullable(),                        
+                        RichEditor::make('deskripsi')->nullable(),
+                        TextInput::make('image_url'),                        
                     ])
             ]);
     }
@@ -52,7 +53,7 @@ class SouvenirResource extends Resource
                 TextColumn::make('id_Souvenir')->sortable(),
                 TextColumn::make('nama')->sortable()->searchable(),
                 TextColumn::make('jenis')->sortable()->searchable(),
-                TextColumn::make('harga')->prefix('RP')->required()->mask(RawJs::make('$money($input)'))->stripCharacters(',')->numeric()->default(1000000),
+                TextColumn::make('harga')->money('Rp.')->sortable(),
                 TextColumn::make('ketersediaan')
                                 ->badge()
                                 ->color(fn (string $state): string => match ($state) {

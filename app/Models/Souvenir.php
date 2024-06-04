@@ -21,7 +21,7 @@ class Souvenir extends Model
         'harga',
         'ketersediaan',
         'deskripsi',
-        'gambar,'
+        'image_url',
     ];
 
     const KETERSEDIAAN_OPSI = [
