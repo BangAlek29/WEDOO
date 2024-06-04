@@ -15,12 +15,6 @@
                         <li class="flex items-center gap-3 text-gray-700">
                             <p class="block antialiased font-sans text-sm leading-normal font-normal text-inherit">Kapasitas: {{ $mobil->kapasitas }} Orang</p>
                         </li>
-                        <li class="flex items-center gap-3 text-gray-700">
-                            <p class="block antialiased font-sans text-sm leading-normal font-normal text-inherit">Deskripsi :</p>
-                        </li>
-                        <li class="flex items-center gap-3 text-gray-700">
-                            <p class="block antialiased font-sans text-sm leading-normal font-normal text-inherit"> {{ $mobil->deskripsi }} </p>
-                        </li>
                     </ul>
 
                     <button class="align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-2 px-4 rounded-lg border border-green-500 text-green-500 hover:opacity-75 focus:ring focus:ring-green-200 active:opacity-[0.85] block w-full mt-6" type="button">Buy Now</button>
