@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('merk');
             $table->integer('kapasitas');
             $table->integer('harga');
+            $table->string('image_url')->nullable();
             $table->timestamps();
         });
     }
