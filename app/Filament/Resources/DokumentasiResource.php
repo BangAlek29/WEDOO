@@ -61,7 +61,8 @@ class DokumentasiResource extends Resource
                         'Tersedia' => 'success',
                     ])
                     ->inline(),
-                        RichEditor::make('deskripsi')->nullable(),                    
+                        RichEditor::make('deskripsi')->nullable(),
+                        TextInput::make('image_url'),                        
                 ])
 
         ]);

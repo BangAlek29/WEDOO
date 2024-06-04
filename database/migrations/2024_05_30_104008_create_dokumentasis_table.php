@@ -19,6 +19,7 @@ return new class extends Migration
             $table->integer('biaya');
             $table->string('ketersediaan');
             $table->text('deskripsi')->nullable();
+            $table->string('image_url');
             $table->timestamps();
         });
     }

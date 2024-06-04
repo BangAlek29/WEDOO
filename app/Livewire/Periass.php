@@ -4,7 +4,9 @@ namespace App\Livewire;
 
 use App\Models\perias;
 use Livewire\Component;
+use Livewire\Attributes\layout;
 
+#[layout('layout.app')]
 class Periass extends Component
 {
     public $periass;

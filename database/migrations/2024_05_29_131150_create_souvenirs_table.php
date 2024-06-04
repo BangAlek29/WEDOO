@@ -18,6 +18,7 @@ return new class extends Migration
             $table->integer('harga');
             $table->string('ketersediaan');
             $table->text('deskripsi')->nullable();
+            $table->string('image_url');
             $table->timestamps();
         });
     }

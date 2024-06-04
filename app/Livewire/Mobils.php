@@ -2,10 +2,11 @@
 
 namespace App\Livewire;
 
+use Livewire\Attributes\layout;
 use App\Models\Mobil;
 use Livewire\Component;
-use Livewire\WithFileUploads;
 
+#[layout('layout.app')]
 class Mobils extends Component
 {
     public $mobils;

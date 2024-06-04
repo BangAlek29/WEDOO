@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('kontak');
             $table->integer('biaya');
             $table->text('deskripsi')->nullable();
+            $table->string('image_url');
             $table->timestamps();
         });
     }

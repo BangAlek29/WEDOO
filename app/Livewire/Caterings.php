@@ -4,7 +4,9 @@ namespace App\Livewire;
 
 use Livewire\Component;
 use App\Models\catering;
+use Livewire\Attributes\layout;
 
+#[layout('layout.app')]
 class Caterings extends Component
 {
 
