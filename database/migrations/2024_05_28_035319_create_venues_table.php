@@ -16,6 +16,7 @@ class CreateVenuesTable extends Migration
             $table->string('tipe');
             $table->text('deskripsi')->nullable();
             $table->string('kota');
+            $table->string('image_url');
             $table->timestamps();
 
             $table->foreign('id_gedung')->references('id_gedung')->on('gedungs')->onDelete('cascade');

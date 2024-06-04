@@ -32,17 +32,18 @@ class FasilitasResource extends Resource
             ->schema([
                 Card::make()
                     ->schema([
-                        TextInput::make('nama_fasilitas')->required(),
+                        TextInput::make('nama_fasilitas')->required()->columnspan(6),
                         TextInput::make('luas')
                             ->numeric()
                             ->required()
                             ->suffix('M')
-                            ->columnSpan(1),  // Atur lebar kolom menjadi lebih kecil
+                            ->columnSpan(3),  // Atur lebar kolom menjadi lebih kecil
                         TextInput::make('kapasitas')
                             ->numeric()
-                            ->required(),
-                        RichEditor::make('deskripsi')->nullable(),                        
-                    ])
+                            ->required()
+                            ->columnSpan(3),
+                        RichEditor::make('deskripsi')->nullable()->columnspan(6),                        
+                    ])->column(6)
             ]);
     }
     

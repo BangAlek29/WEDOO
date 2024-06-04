@@ -15,7 +15,7 @@
                     <p class="block antialiased font-sans text-sm leading-normal font-normal text-inherit">Deskripsi :</p>
                 </li>
                 <li class="flex items-center gap-3 text-gray-700">
-                    <p class="block antialiased font-sans text-sm leading-normal font-normal text-inherit">{{ $akomodasi->deskripsi }}</p>
+                    <p class="block antialiased font-sans text-sm leading-normal font-normal text-inherit overflow-ellipsis line-clamp-3">{{ $akomodasi->deskripsi }}</p>
                 </li>
             </ul>
 

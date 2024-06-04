@@ -43,77 +43,32 @@
     </span>
 
     <!-- pemilihan vendor -->
-    <div class="grid grid-cols-3">
-        <a href="#vendor1" class="group relative block bg-black">
-            <img
-                alt=""
-                src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                class="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"
-            />
-
-            <div class="relative p-4 sm:p-6 lg:p-8">
-                <p class="text-sm font-medium uppercase tracking-widest text-pink-500">VENDOR 1</p>
-
-                <p class="text-xl font-bold text-white sm:text-2xl">Blossom Bliss</p>
-
-                <div class="mt-32 sm:mt-48 lg:mt-64">
-                <div
-                    class="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100"
-                >
-                    <p class="text-sm text-white">
-                    Rangkaian bunga dan dekorasi mewah dari Flora & Finesse. Percayakan kami untuk menghadirkan suasana yang memukau di hari istimewa Anda!
-                    </p>
+     <!---VENDOR KE 1--->
+     
+     <div class="grid grid-cols-3">
+        @foreach ($vendors as $vendor)
+            <a href="/Mobil" wire:click.prevent="selectVendor({{ $vendor->id_vendor }})" class="group relative block bg-black">
+                <img
+                    alt="{{ $vendor->name }}"
+                    src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    class="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"
+                />
+    
+                <div class="relative p-4 sm:p-6 lg:p-8">
+                    <p class="text-sm font-medium uppercase tracking-widest text-pink-500">{{ $vendor->nama }}</p>
+    
+                    <p class="text-xl font-bold text-white sm:text-2xl">{{ $vendor->nama }}</p>
+    
+                    <div class="mt-32 sm:mt-48 lg:mt-64">
+                        <div
+                            class="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100"
+                        >
+                            <p class="text-sm text-white">bebas</p>
+                        </div>
+                    </div>
                 </div>
-                </div>
-            </div>
-        </a>
-        <a href="#vendor2" class="group relative block bg-black">
-            <img
-                alt=""
-                src="https://images.unsplash.com/photo-1550784718-990c6de52adf?q=80&w=1368&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                class="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"
-            />
-
-            <div class="relative p-4 sm:p-6 lg:p-8">
-                <p class="text-sm font-medium uppercase tracking-widest text-pink-500">VENDOR 2</p>
-
-                <p class="text-xl font-bold text-white sm:text-2xl">Forever Frames</p>
-
-                <div class="mt-32 sm:mt-48 lg:mt-64">
-                <div
-                    class="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100"
-                >
-                    <p class="text-sm text-white">
-                    Abadikan setiap momen berharga dengan Eternal Moments. Tim fotografer profesional kami siap menangkap keindahan dan emosi dari setiap detik pernikahan Anda. 
-                    </p>
-                </div>
-                </div>
-            </div>
-        </a>
-        <a href="#vendor3" class="group relative block bg-black">
-            <img
-                alt=""
-                src="https://images.unsplash.com/photo-1607861884586-c7cfaed16290?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTl8fHdlZGRpbmd8ZW58MHx8MHx8fDA%3D"
-                class="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"
-            />
-
-            <div class="relative p-4 sm:p-6 lg:p-8">
-                <p class="text-sm font-medium uppercase tracking-widest text-pink-500">VENDOR 3</p>
-
-                <p class="text-xl font-bold text-white sm:text-2xl">Savory Celebrations</p>
-
-                <div class="mt-32 sm:mt-48 lg:mt-64">
-                <div
-                    class="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100"
-                >
-                    <p class="text-sm text-white">
-                    Nikmati kelezatan hidangan yang tak terlupakan dengan Gourmet Delights. 
-                    Kami menyajikan berbagai pilihan menu yang lezat dan berkualitas tinggi.
-                    </p>
-                </div>
-                </div>
-            </div>
-        </a>
+            </a>
+        @endforeach
     </div>
     <!-- end pemilihan vendor -->
     <span class="flex items-center mt-10 mb-4" id = "vendor">

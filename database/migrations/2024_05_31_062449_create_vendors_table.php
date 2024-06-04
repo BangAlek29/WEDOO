@@ -12,16 +12,16 @@ class CreateVendorsTable extends Migration
         Schema::create('vendors', function (Blueprint $table) {
             $table->char('id_vendor', 36)->primary();
             $table->string('nama');
-            $table->char('id_venue', 36);
-            $table->char('id_souvenir', 36);
-            $table->char('id_penghulu', 36);
-            $table->char('id_mc', 36);
-            $table->char('id_mobil', 36);
-            $table->char('id_akomodasi', 36);
-            $table->char('id_dokumentasi', 36);
-            $table->char('id_catering', 36);
-            $table->char('id_entertainment', 36);
-            $table->char('id_perias', 36);
+            $table->char('id_venue', 36)->nullable();
+            $table->char('id_souvenir', 36)->nullable();
+            $table->char('id_penghulu', 36)->nullable();
+            $table->char('id_mc', 36)->nullable();
+            $table->char('id_mobil', 36)->nullable();
+            $table->char('id_akomodasi', 36)->nullable();
+            $table->char('id_dokumentasi', 36)->nullable();
+            $table->char('id_catering', 36)->nullable();
+            $table->char('id_entertainment', 36)->nullable();
+            $table->char('id_perias', 36)->nullable();
             $table->timestamps();
 
             $table->foreign('id_venue')->references('id_venue')->on('venues');

@@ -20,6 +20,7 @@ class perias extends Model
         'kontak',
         'biaya',
         'ketersediaan',
+        'image_url',
         'deskripsi',
     ];
 

@@ -39,6 +39,7 @@ class MCResource extends Resource
                 Card::make()
                     ->schema([
                         TextInput::make('nama')->required(),
+                        TextInput::make('image_url')->required(),
                         TextInput::make('kontak')->required(),
                         TextInput::make('biaya')->prefix('RP')->required()->mask(RawJs::make('$money($input)'))->stripCharacters(',')->numeric()->default(1000000),
                         ToggleButtons::make('ketersediaan')

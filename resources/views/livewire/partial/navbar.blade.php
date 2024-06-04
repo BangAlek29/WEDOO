@@ -15,10 +15,10 @@
                 </div>
             </div>
             <ul class="hidden md:flex space-x-6 text-lg">
-                <li><a wire:navigate href="/" class="text-black hover:text-gray-700">HOME</a></li>
+                <li><a wire:navigate href="/vendor" class="text-black hover:text-gray-700">HOME</a></li>
                 <li><a href="/transaksi" class="text-gray-400 hover:text-gray-700">TRANSAKSI</a></li>
                 <li><a href="/contact" class="text-gray-400 hover:text-gray-700">CONTACT</a></li>
-                <li><a href="/login" class="text-gray-400 hover:text-gray-700">LOGIN</a></li>
+                <li><a href="/" class="text-gray-400 hover:text-gray-700">LOGIN</a></li>
             </ul>
         </div>
     </nav>

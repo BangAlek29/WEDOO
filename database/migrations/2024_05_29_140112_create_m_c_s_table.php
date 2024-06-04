@@ -10,6 +10,7 @@ class CreateMcsTable extends Migration
     {
         Schema::create('mcs', function (Blueprint $table) {
             $table->char('id_mc', 10)->primary();
+            $table->string('image_url');
             $table->string('nama');
             $table->string('kontak');
             $table->decimal('biaya', 10, 2);

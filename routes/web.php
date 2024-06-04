@@ -26,10 +26,10 @@ Route::get('/perias', periass::class);
 Route::get('/souvenir', Souvenirs::class);
 Route::get('/venue', Venues::class);
 Route::get('/akomodasi', akomodasis::class);
-Route::get('/', Vendors::class);
+Route::get('/vendor', Vendors::class);
 Route::get('/transaksi', Transaksi::class);
 Route::get('/contact', Contact::class);
-Route::get('/login', Login::class);
+Route::get('/', Login::class);
 Route::get('/register', Register::class);
 
 
