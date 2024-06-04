@@ -1,4 +1,4 @@
-<div style="padding-left: 179px;">
+<div style="padding-left: 250px;">
 <section class="px-8 py-0">
   <div class="mt-0">
     <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">

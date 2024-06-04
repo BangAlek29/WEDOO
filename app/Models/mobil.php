@@ -22,6 +22,7 @@ class Mobil extends Model implements HasMedia
         'merk',
         'kapasitas',
         'harga',
+        'image_url',
     ];
 
     protected static function boot()

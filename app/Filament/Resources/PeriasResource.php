@@ -52,7 +52,7 @@ class PeriasResource extends Resource
                 TextColumn::make('id_perias')->sortable(),
                 TextColumn::make('nama')->sortable()->searchable(),
                 TextColumn::make('kontak')->sortable()->searchable(),
-                TextColumn::make('biaya')->prefix('RP')->required()->mask(RawJs::make('$money($input)'))->stripCharacters(',')->numeric()->default(1000000),
+                TextColumn::make('biaya')->money('Rp.')->sortable(),
                 TextColumn::make('ketersediaan')
                                 ->badge()
                                 ->color(fn (string $state): string => match ($state) {

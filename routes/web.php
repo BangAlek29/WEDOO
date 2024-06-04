@@ -1,34 +1,26 @@
 <?php
 
-use App\Livewire\Auth\login;
-use App\Livewire\Auth\register;
-use App\Livewire\MC;
+use App\Livewire\MCs;
 use App\Livewire\Mobils;
-use App\Livewire\Venue;
-use App\Livewire\perias;
-use App\Livewire\Vendor;
-use App\Livewire\catering;
-use App\Livewire\Dekorasi;
-use App\Livewire\HomePage;
-use App\Livewire\Souvenir;
-use App\Livewire\Akomodasi;
-use App\Livewire\dokumentasi;
-use App\Livewire\entertainment;
+use App\Livewire\Venues;
+use App\Livewire\periass;
+use App\Livewire\caterings;
+use App\Livewire\Souvenirs;
+use App\Livewire\Akomodasis;
+use App\Livewire\dokumentasis;
+use App\Livewire\entertainments;
 use Illuminate\Support\Facades\Route;
 
 
-Route::get('/catering', Catering::class);
-Route::get('/dekorasi', dekorasi::class);
-Route::get('/dokumentasi', dokumentasi::class);
-Route::get('/entertainment', entertainment::class);
-Route::get('/mc', MC::class);
+Route::get('/catering', Caterings::class);
+Route::get('/dokumentasi', dokumentasis::class);
+Route::get('/entertainment', entertainments::class);
+Route::get('/mc', MCs::class);
 Route::get('/Mobil', Mobils::class);
-Route::get('/perias', perias::class);
-Route::get('/souvenir', Souvenir::class);
-Route::get('/venue', Venue::class);
-Route::get('/akomodasi', Akomodasi::class);
-Route::get('/login', login::class);
-Route::get('/register', register::class);
+Route::get('/perias', periass::class);
+Route::get('/souvenir', Souvenirs::class);
+Route::get('/venue', Venues::class);
+Route::get('/akomodasi', akomodasis::class);
 
 Route::get('/', function () {
     return view('livewire.vendor');
@@ -41,5 +33,13 @@ Route::get('/transaksi', function () {
 Route::get('/contact', function () {
     return view('livewire.contact');
 })->name('contact.page');
+
+Route::get('/login', function () {
+    return view('livewire.auth.login');
+})->name('login.page');
+
+Route::get('/register', function () {
+    return view('livewire.auth.register');
+})->name('login.page');
 
 

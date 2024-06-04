@@ -65,11 +65,6 @@
                         </a>
                     </li>
                     <li>
-                        <a class="flex items-center rounded py-3 pl-3 pr-4 text-gray-50 hover:bg-pink-600" href="/dekorasi">
-                            <span class="select-none">Dekorasi</span>
-                        </a>
-                    </li>
-                    <li>
                         <a class="flex items-center rounded py-3 pl-3 pr-4 text-gray-50 hover:bg-pink-600" href="/mc">
                             <span class="select-none">MC</span>
                         </a>
@@ -81,7 +76,7 @@
                     </li>
                     <li>
                         <a class="flex items-center rounded py-3 pl-3 pr-4 text-gray-50 hover:bg-pink-600" href="/akomodasi">
-                            <span class="select-none">Akomodasi</span>
+                            <span class="select-none">Akomodasi & Dekorasi</span>
                         </a>
                     </li>
                 </ul>
