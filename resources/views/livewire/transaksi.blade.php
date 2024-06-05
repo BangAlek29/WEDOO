@@ -20,7 +20,7 @@
             </div>
         </div>
         <div class="flex justify-end p-4 sm:p-6">
-            <a href="#"
+            <a href="/detailtransaksi"
                 class="inline-block mt-2 rounded bg-indigo-600 px-4 py-2 text-lg font-medium
                 text-white transition hover:bg-indigo-700 focus:outline-none focus:ring focus:ring-yellow-400">
                 PESANAN MU

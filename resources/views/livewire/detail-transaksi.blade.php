@@ -29,7 +29,7 @@
                 </thead>
                 <tbody class="bg-white divide-y divide-gray-200">
                     <tr>
-                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">Nama Vendor</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">{{ $vendors->nama }}</td>
                         <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">DzikriDOr</td>
                         <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">087824981627</td>
                         <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">Rp. 1,000,000.00</td>

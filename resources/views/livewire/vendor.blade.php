@@ -49,7 +49,7 @@
         @foreach ($vendors as $vendor)
             <a href="/Mobil" wire:click.prevent="selectVendor({{ $vendor->id_vendor }})" class="group relative block bg-black">
                 <img
-                    alt="{{ $vendor->name }}"
+                    alt="{{ $vendor->nama }}"
                     src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                     class="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"
                 />

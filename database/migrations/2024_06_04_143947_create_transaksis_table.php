@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('transaksis', function (Blueprint $table) {
             $table->char('id_pelanggan', 36)->primary();
-            $table->int('total_harga');
+            $table->integer('total_harga');
             $table->date('tgl_transaksi');
             $table->timestamps();
         });
