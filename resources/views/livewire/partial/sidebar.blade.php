@@ -1,9 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
+    <style>
+    .italianno-text {
+    font-family: 'Italianno', cursive;
+}
+</style>
+</head>
+
 <div>
     <div id="containerSidebar" class=" flex">
-        <nav id="sidebar" class="fixed top-0 h-full bg-pink-400 transform -translate-x-full transition-transform duration-300 md:translate-x-0">
+        <nav id="sidebar" class="italianno-text fixed top-0 h-full bg-pink-400 transform -translate-x-full transition-transform duration-300 md:translate-x-0 ">
             <!-- one category / navigation group -->
             <div class=" pb-0 py-20 max-w-64">
-                <ul class="text-lg font-medium space-y-2  ">
+                <ul class="text-2xl font-medium space-y-2  ">
                     <li class ="flex items-center rounded py-3 pl-3 max-h-12 text-gray-50 hover:bg-pink-600" >
                         <img class="style-image w-1/6 h-1/6 items-center" src="https://static.thenounproject.com/png/251451-200.png" alt="Image Description">
                         <a class="pl-4" href="/">
@@ -17,21 +30,25 @@
                         </a>
                     </li>
                     <li>
+                        <img class="style-image w-1/6 h-1/6 items-center" src="hhttps://pngfre.com/wp-content/uploads/Gift-31.png" alt="Image Description">
                         <a class="flex items-center rounded py-3 pl-3 pr-4 text-gray-50 hover:bg-pink-600" href="/souvenir">
                             <span class="select-none">Souvenir</span>
                         </a>
                     </li>
                     <li>
+                        <img class="style-image w-1/6 h-1/6 items-center" src="https://www.pikpng.com/pngl/b/134-1344636_school-house-vector-ikon-gedung-sekolah-png-clipart.png" alt="Image Description">
                         <a class="flex items-center rounded py-3 pl-3 pr-4 text-gray-50 hover:bg-pink-600" href="/venue">
                             <span class="select-none">Venue</span>
                         </a>
                     </li>
                     <li>
+                        <img class="style-image w-1/6 h-1/6 items-center" src="https://e7.pngegg.com/pngimages/198/240/png-clipart-cherkasy-catering-break-line-art-catering-white-leaf.png" alt="Image Description">
                         <a class="flex items-center rounded py-3 pl-3 pr-4 text-gray-50 hover:bg-pink-600" href="/catering">
                             <span class="select-none">Catering</span>
                         </a>
                     </li>
                     <li>
+                        <img class="style-image w-1/6 h-1/6 items-center" src="https://e7.pngegg.com/pngimages/198/240/png-clipart-cherkasy-catering-break-line-art-catering-white-leaf.png" alt="Image Description">
                         <a class="flex items-center rounded py-3 pl-3 pr-4 text-gray-50 hover:bg-pink-600" href="/dokumentasi">
                             <span class="select-none">Dokumentasi</span>
                         </a>
