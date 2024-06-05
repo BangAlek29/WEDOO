@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('mobils', function (Blueprint $table) {
             $table->char('id_mobil', 36)->primary();
             $table->string('nama_mobil');
+            $table->string('kontak');
             $table->string('merk');
             $table->integer('kapasitas');
             $table->integer('harga');

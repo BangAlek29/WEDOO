@@ -7,16 +7,15 @@ use App\Models\Pelanggan;
 use Livewire\Component;
 use Livewire\Attributes\Layout;
 
-#[Layout('layouts.appvendor')]
+#[Layout('layout.appvendor')]
 class Vendors extends Component
 {
     public $vendors;
-    public $selectedVendorId;
-    public $transactionId;
 
-    public function mount($transactionId)
+
+    public function mount()
     {
-        $this->transactionId = $transactionId;
+
         $this->vendors = Vendor::all();
     }
 
@@ -27,14 +26,4 @@ class Vendors extends Component
         ]);
     }
 
-    public function selectVendor($vendorId)
-    {
-        $this->selectedVendorId = $vendorId;
-
-        $transaction = Transaksi::findOrFail($this->transactionId);
-        $transaction->vendors()->attach($vendorId);
-
-        // Emit an event or redirect if necessary
-        $this->emit('vendorSelected', $vendorId);
-    }
 }

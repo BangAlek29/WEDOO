@@ -31,6 +31,7 @@ class MobilResource extends Resource
                     ->schema([
                         TextInput::make('nama_mobil')->required(),
                         TextInput::make('merk')->required(),
+                        TextInput::make('kontak')->required(),
                         TextInput::make('kapasitas')->numeric()->required(),
                         TextInput::make('harga')
                             ->prefix('RP')

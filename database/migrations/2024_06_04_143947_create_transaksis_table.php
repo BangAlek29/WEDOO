@@ -13,9 +13,12 @@ return new class extends Migration
     {
         Schema::create('transaksis', function (Blueprint $table) {
             $table->char('id_pelanggan', 36)->primary();
+            $table->char('id_vendor', 36);
             $table->integer('total_harga');
             $table->date('tgl_transaksi');
             $table->timestamps();
+
+            $table->foreign('id_vendor')->references('id_vendor')->on('vendors')->onDelete('cascade');
         });
     }
 

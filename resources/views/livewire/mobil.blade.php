@@ -60,6 +60,11 @@
     </style>
 </head>
 <body>
+    @if (session()->has('message'))
+    <div style="color: green;">
+        {{ session('message') }}
+    </div>
+@endif
     <div style="padding-left: 230px;">
         <section class="px-8 py-0">
             <div class="mt-0">
@@ -69,12 +74,13 @@
                         <div class=" text-gray-700 shadow-none !m-0 p-1 text-center ">
                             <img class="style-image w-full h-60" src="{{  $mobil->image_url }}" alt="Image Description">
                             <h4 class="block antialiased tracking-normal text-xl font-semibold leading-snug text-blue-gray-900">{{ $mobil->nama_mobil }}</h4>
+                            <h4 class="block antialiased text-sm leading-normal text-inherit font-normal !text-gray-500">{{ $mobil->kontak }}</h4>
                             <p class="block antialiased text-sm leading-normal text-inherit font-normal !text-gray-500">{{ $mobil->merk }}</p>
                             <h4 class="block antialiased text-sm leading-normal text-inherit font-normal !text-gray-500">Biaya : Rp.{{ $mobil->harga }}<span class="block antialiased tracking-normal text-base font-semibold leading-relaxed text-blue-gray-900 -translate-y-0.5 self-end opacity-70"></span></h4>
                             <h4 class="block antialiased text-sm leading-normal text-inherit font-normal !text-gray-500">Kapasitas : {{ $mobil->kapasitas }} orang<span class="block antialiased tracking-normal text-base font-semibold leading-relaxed text-blue-gray-900 -translate-y-0.5 self-end opacity-70"></span></h4>
                                                    </div>
                         <div class=" border-t border-blue-gray-50  bg-slate-200 text-center">
-                             <button class="custom-button w-10/12" type="button">ADD TO LIST</button>
+                             <button wire:click="add({{$mobil->id_mobil}})" class="custom-button w-10/12" type="button">ADD TO LIST</button>
 </div>
                     </div>
                     @endforeach

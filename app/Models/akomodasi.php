@@ -2,15 +2,12 @@
 
 namespace App\Models;
 
-use Spatie\MediaLibrary\HasMedia;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Database\Eloquent\Model;
-use Spatie\MediaLibrary\InteractsWithMedia;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 
-class akomodasi extends Model implements HasMedia
+class akomodasi extends Model
 {
-    use InteractsWithMedia;
     use HasFactory;
 
     protected $primaryKey = 'id_akomodasi';

@@ -1,5 +1,5 @@
 
-<div class="bg-pink-100">
+<div class="bg-transparent">
     <section class="max-w-2xl mx-auto p-6 bg-white rounded-lg shadow mt-10">
         <h2 class="text-3xl font-bold text-gray-800 mb-6 text-center">Contact Us</h2>
         

@@ -65,12 +65,15 @@
                         </li>
                     </ul>
     
-                    <button wire:click="selectVendor({{ $vendor->id_vendor }})" class="align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-2 px-4 rounded-lg border border-green-500 text-green-500 hover:opacity-75 focus:ring focus:ring-green-200 active:opacity-[0.85] mt-6">Pilih</button>
+                    <button wire:click="selectVendor('{{ $vendor->id_vendor }}')" class="align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-2 px-4 rounded-lg border border-green-500 text-green-500 hover:opacity-75 focus:ring focus:ring-green-200 active:opacity-[0.85] mt-6">Pilih</button>
                 </div>
             </div>
             @endforeach
         </div>
     </div>
+    
+    
+    
     
     <!-- end pemilihan vendor -->
     <span class="flex items-center mt-10 mb-4" id = "vendor">

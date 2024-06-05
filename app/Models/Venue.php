@@ -17,6 +17,7 @@ class Venue extends Model
     protected $fillable = [
         'id_venue',
         'id_gedung',
+        'kontak',
         'image_url',
         'alamat',
         'biaya',

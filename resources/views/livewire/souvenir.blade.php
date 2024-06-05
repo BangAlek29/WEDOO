@@ -68,6 +68,7 @@
                         <div class=" text-gray-700 shadow-none !m-0 p-1 text-center ">
                             <img class="style-image w-full h-60" src="{{ $souvenir->image_url }}" alt="Image Description">
                             <h4 class="block antialiased tracking-normal text-xl font-semibold leading-snug text-blue-gray-900">{{ $souvenir->nama }}</h4>
+                            <p class="block antialiased text-sm leading-normal text-inherit font-normal !text-gray-500">{{ $souvenir->kontak }}</p>
                             <p class="block antialiased text-sm leading-normal text-inherit font-normal !text-gray-500"> Kategori : {{ $souvenir->jenis }}</p>
                             <h4 class="block antialiased text-sm leading-normal text-inherit font-normal !text-gray-500">Harga : {{ $souvenir->harga }}<span class="block antialiased tracking-normal text-base font-semibold leading-relaxed text-blue-gray-900 -translate-y-0.5 self-end opacity-70"></span></h4>
                             </div>

@@ -4,29 +4,32 @@ namespace App\Livewire;
 
 use Livewire\Component;
 use App\Models\Transaksi;
+use App\Models\Vendor;
 use Livewire\Attributes\Layout;
 
-#[Layout('layouts.appvendor')]
+#[Layout('layout.appvendor')]
 class DetailTransaksi extends Component
 {
-    public $transactionId;
-    public $transaction;
+    public $vendor;
 
-    public function mount($transactionId)
+    public function mount()
     {
-        $this->transactionId = $transactionId;
-        $this->loadTransaction();
-    }
-
-    public function loadTransaction()
-    {
-        $this->transaction = Transaksi::with('vendors')->findOrFail($this->transactionId);
+        $this->vendor = Vendor::with([
+            'mobil',
+            'venue',
+            'souvenir',
+            'penghulu',
+            'mc',
+            'akomodasi',
+            'dokumentasi',
+            'catering',
+            'entertainment',
+            'perias'
+        ])->get();
     }
 
     public function render()
     {
-        return view('livewire.detail-transaksi', [
-            'transaction' => $this->transaction,
-        ]);
+        return view('livewire.detail-transaksi', ['vendor' => $this->vendor]);
     }
 }

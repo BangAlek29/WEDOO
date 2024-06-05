@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -29,53 +28,53 @@
                             <span class="select-none">Mobil</span>
                         </a>
                     </li>
-                    <li>
-                        <img class="style-image w-1/6 h-1/6 items-center" src="hhttps://pngfre.com/wp-content/uploads/Gift-31.png" alt="Image Description">
-                        <a class="flex items-center rounded py-3 pl-3 pr-4 text-gray-50 hover:bg-pink-600" href="/souvenir">
+                    <li class ="flex items-center rounded py-3 pl-3 max-h-12  text-gray-50 hover:bg-pink-600">
+                        <img class="style-image w-1/6 h-1/6 items-center" src="https://pngfre.com/wp-content/uploads/Gift-31.png" alt="Image Description">
+                        <a class="pl-4" href="/souvenir">
                             <span class="select-none">Souvenir</span>
                         </a>
                     </li>
-                    <li>
+                    <li class ="flex items-center rounded py-3 pl-3 max-h-12  text-gray-50 hover:bg-pink-600">
                         <img class="style-image w-1/6 h-1/6 items-center" src="https://www.pikpng.com/pngl/b/134-1344636_school-house-vector-ikon-gedung-sekolah-png-clipart.png" alt="Image Description">
-                        <a class="flex items-center rounded py-3 pl-3 pr-4 text-gray-50 hover:bg-pink-600" href="/venue">
+                        <a class="pl-4" href="/venue">
                             <span class="select-none">Venue</span>
                         </a>
                     </li>
-                    <li>
-                        <img class="style-image w-1/6 h-1/6 items-center" src="https://e7.pngegg.com/pngimages/198/240/png-clipart-cherkasy-catering-break-line-art-catering-white-leaf.png" alt="Image Description">
-                        <a class="flex items-center rounded py-3 pl-3 pr-4 text-gray-50 hover:bg-pink-600" href="/catering">
+                    <li class ="flex items-center rounded py-3 pl-3 max-h-12  text-gray-50 hover:bg-pink-600">
+                        <img class="style-image w-1/6 h-1/6 items-center" src="https://www.svgrepo.com/show/490738/food-restaurant.svg">
+                        <a class="pl-4" href="/catering">
                             <span class="select-none">Catering</span>
                         </a>
                     </li>
-                    <li>
-                        <img class="style-image w-1/6 h-1/6 items-center" src="https://png.pngtree.com/png-clipart/20220623/ourmid/pngtree-black-digital-home-camera-png-image_5279941.png" alt="Image Description">
-                        <a class="flex items-center rounded py-3 pl-3 pr-4 text-gray-50 hover:bg-pink-600" href="/dokumentasi">
+                    <li class ="flex items-center rounded py-3 pl-3 max-h-12  text-gray-50 hover:bg-pink-600">
+                        <img class="style-image w-1/6 h-1/6 items-center" src="https://www.svgrepo.com/show/904/photo-camera.svg" alt="Image Description">
+                        <a class="pl-4" href="/dokumentasi">
                             <span class="select-none">Dokumentasi</span>
                         </a>
                     </li>
-                    <li>
+                    <li class ="flex items-center rounded py-3 pl-3 max-h-12  text-gray-50 hover:bg-pink-600">
                         <img class="style-image w-1/6 h-1/6 items-center" src="https://cdn.pixabay.com/photo/2012/04/13/12/49/electric-guitar-32273_640.png" alt="Image Description">
-                        <a class="flex items-center rounded py-3 pl-3 pr-4 text-gray-50 hover:bg-pink-600" href="/entertainment">
+                        <a class="pl-4" href="/entertainment">
                             <span class="select-none">Entertainment</span>
                         </a>
                     </li>
-                    <li>
-                        <img class="style-image w-1/6 h-1/6 items-center" src="https://toppng.com/uploads/preview/karaoke-microphone-icon-vector-microphone-icon-115630044341gob7c2p8e.png" alt="Image Description">
-                        <a class="flex items-center rounded py-3 pl-3 pr-4 text-gray-50 hover:bg-pink-600" href="/mc">
+                    <li class ="flex items-center rounded py-3 pl-3 max-h-12  text-gray-50 hover:bg-pink-600">
+                        <img class="style-image w-1/6 h-1/6 items-center" src="https://www.svgrepo.com/show/74605/microphone-for-a-singer-or-a-conference.svg" alt="Image Description">
+                        <a class="pl-4" href="/mc">
                             <span class="select-none">MC</span>
                         </a>
                     </li>
-                    <li>
+                    <li class ="flex items-center rounded py-3 pl-3 max-h-12  text-gray-50 hover:bg-pink-600">
                         
                         <img class="style-image w-1/6 h-1/6 items-center" src="https://www.svgrepo.com/show/28653/inclined-makeup-brush.svg" alt="Image Description">
-                        <a class="flex items-center rounded py-3 pl-3 pr-4 text-gray-50 hover:bg-pink-600" href="/perias">
+                        <a class="pl-4" href="/perias">
                             <span class="select-none">Perias</span>
                         </a>
                     </li>
-                    <li>
+                    <li class ="flex items-center rounded py-3 pl-3 max-h-12  text-gray-50 hover:bg-pink-600">
                         
-                        <img class="style-image w-1/6 h-1/6 items-center" src="https://png.pngtree.com/png-vector/20210122/ourmid/pngtree-black-and-white-decorative-mandala-png-design-png-image_2782618.png" alt="Image Description">
-                        <a class="flex items-center rounded py-3 pl-3 pr-4 text-gray-50 hover:bg-pink-600" href="/akomodasi">
+                        <img class="style-image w-1/6 h-1/6 items-center" src="https://svgsilh.com/svg/1332804.svg" alt="Image Description">
+                        <a class="pl-4" href="/akomodasi">
                             <span class="select-none">Akomodasi & Dekorasi</span>
                         </a>
                     </li>

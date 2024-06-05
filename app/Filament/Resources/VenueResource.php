@@ -33,6 +33,8 @@ class VenueResource extends Resource
                         ->required(),
                     TextInput::make('alamat')
                         ->required(),
+                    TextInput::make('kontak')
+                        ->required(),
                     TextInput::make('kota')
                         ->required(),
                     TextInput::make('biaya')

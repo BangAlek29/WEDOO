@@ -17,6 +17,7 @@ class Souvenir extends Model
     protected $fillable = [
         'id_Souvenir',
         'nama',
+        'kontak',
         'jenis',
         'harga',
         'ketersediaan',

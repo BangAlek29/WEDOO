@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('souvenirs', function (Blueprint $table) {
             $table->char('id_Souvenir', 36)->primary();
             $table->string('nama');
+            $table->string('kontak');
             $table->string('jenis');
             $table->integer('harga');
             $table->string('ketersediaan');

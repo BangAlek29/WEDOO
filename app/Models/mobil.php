@@ -19,6 +19,7 @@ class Mobil extends Model implements HasMedia
     protected $fillable = [
         'id_mobil',
         'nama_mobil',
+        'kontak',
         'merk',
         'kapasitas',
         'harga',

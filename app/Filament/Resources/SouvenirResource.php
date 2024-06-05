@@ -29,6 +29,7 @@ class SouvenirResource extends Resource
                 Card::make()
                     ->schema([
                         TextInput::make('nama')->required(),
+                        TextInput::make('kontak')->required(),
                         TextInput::make('jenis')->required(),
                         TextInput::make('harga')->prefix('RP')->required()->mask(RawJs::make('$money($input)'))->stripCharacters(',')->numeric()->default(1000000),
                         ToggleButtons::make('ketersediaan')
@@ -52,6 +53,7 @@ class SouvenirResource extends Resource
             ->columns([
                 TextColumn::make('id_Souvenir')->sortable(),
                 TextColumn::make('nama')->sortable()->searchable(),
+                TextColumn::make('kontak')->sortable()->searchable(),
                 TextColumn::make('jenis')->sortable()->searchable(),
                 TextColumn::make('harga')->money('Rp.')->sortable(),
                 TextColumn::make('ketersediaan')
