@@ -12,6 +12,7 @@ use App\Livewire\Transaksi;
 use App\Livewire\Akomodasis;
 use App\Livewire\Auth\Login;
 use App\Livewire\Auth\Register;
+use App\Livewire\DetailTransaksi;
 use App\Livewire\dokumentasis;
 use App\Livewire\entertainments;
 use App\Livewire\Istri;
@@ -35,6 +36,7 @@ Route::get('/login', Login::class);
 Route::get('/register', Register::class);
 Route::get('/istri', Istri::class);
 Route::get('/suami', Suami::class);
+Route::get('/detailtransaksi', DetailTransaksi::class);
 
 
 
