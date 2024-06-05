@@ -13,6 +13,7 @@ use App\Livewire\Transaksi;
 use App\Livewire\Akomodasis;
 use App\Livewire\Auth\Login;
 use App\Livewire\Auth\Register;
+use App\Livewire\DetailTransaksi;
 use App\Livewire\dokumentasis;
 use App\Livewire\entertainments;
 use App\Livewire\istri;
