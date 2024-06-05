@@ -48,27 +48,33 @@
                         </a>
                     </li>
                     <li>
-                        <img class="style-image w-1/6 h-1/6 items-center" src="https://e7.pngegg.com/pngimages/198/240/png-clipart-cherkasy-catering-break-line-art-catering-white-leaf.png" alt="Image Description">
+                        <img class="style-image w-1/6 h-1/6 items-center" src="https://png.pngtree.com/png-clipart/20220623/ourmid/pngtree-black-digital-home-camera-png-image_5279941.png" alt="Image Description">
                         <a class="flex items-center rounded py-3 pl-3 pr-4 text-gray-50 hover:bg-pink-600" href="/dokumentasi">
                             <span class="select-none">Dokumentasi</span>
                         </a>
                     </li>
                     <li>
+                        <img class="style-image w-1/6 h-1/6 items-center" src="https://cdn.pixabay.com/photo/2012/04/13/12/49/electric-guitar-32273_640.png" alt="Image Description">
                         <a class="flex items-center rounded py-3 pl-3 pr-4 text-gray-50 hover:bg-pink-600" href="/entertainment">
                             <span class="select-none">Entertainment</span>
                         </a>
                     </li>
                     <li>
+                        <img class="style-image w-1/6 h-1/6 items-center" src="https://toppng.com/uploads/preview/karaoke-microphone-icon-vector-microphone-icon-115630044341gob7c2p8e.png" alt="Image Description">
                         <a class="flex items-center rounded py-3 pl-3 pr-4 text-gray-50 hover:bg-pink-600" href="/mc">
                             <span class="select-none">MC</span>
                         </a>
                     </li>
                     <li>
+                        
+                        <img class="style-image w-1/6 h-1/6 items-center" src="https://www.svgrepo.com/show/28653/inclined-makeup-brush.svg" alt="Image Description">
                         <a class="flex items-center rounded py-3 pl-3 pr-4 text-gray-50 hover:bg-pink-600" href="/perias">
                             <span class="select-none">Perias</span>
                         </a>
                     </li>
                     <li>
+                        
+                        <img class="style-image w-1/6 h-1/6 items-center" src="https://png.pngtree.com/png-vector/20210122/ourmid/pngtree-black-and-white-decorative-mandala-png-design-png-image_2782618.png" alt="Image Description">
                         <a class="flex items-center rounded py-3 pl-3 pr-4 text-gray-50 hover:bg-pink-600" href="/akomodasi">
                             <span class="select-none">Akomodasi & Dekorasi</span>
                         </a>
