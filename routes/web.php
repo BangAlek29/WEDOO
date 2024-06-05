@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Route;
 use App\Livewire\MCs;
 use App\Livewire\Mobils;
 use App\Livewire\Venues;
@@ -14,7 +15,9 @@ use App\Livewire\Auth\Login;
 use App\Livewire\Auth\Register;
 use App\Livewire\dokumentasis;
 use App\Livewire\entertainments;
-use Illuminate\Support\Facades\Route;
+use App\Livewire\istri;
+use App\Livewire\suami;
+use App\Livewire\DetailTransaksi;
 
 
 Route::get('/catering', Caterings::class);
@@ -26,11 +29,12 @@ Route::get('/perias', periass::class);
 Route::get('/souvenir', Souvenirs::class);
 Route::get('/venue', Venues::class);
 Route::get('/akomodasi', akomodasis::class);
-Route::get('/vendor', Vendors::class);
+Route::get('/', Vendors::class);
 Route::get('/transaksi', Transaksi::class);
 Route::get('/contact', Contact::class);
-Route::get('/', Login::class);
+Route::get('/login', Login::class);
 Route::get('/register', Register::class);
-
-
+Route::get('/istri', Istri::class);
+Route::get('/suami', suami::class);
+Route::get('/detailtransaksi', detailTransaksi::class);
 

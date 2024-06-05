@@ -1,16 +1,18 @@
 <div>
     <div id="containerSidebar" class=" flex">
-        <nav id="sidebar" class="fixed top-0 h-full bg-pink-700 transform -translate-x-full transition-transform duration-300 md:translate-x-0">
+        <nav id="sidebar" class="fixed top-0 h-full bg-pink-400 transform -translate-x-full transition-transform duration-300 md:translate-x-0">
             <!-- one category / navigation group -->
-            <div class="px-4 pb-0 py-20">
-                <ul class="text-lg font-medium space-y-2">
-                    <li>
-                        <a class="flex items-center rounded py-3 pl-3 pr-4 text-gray-50 hover:bg-pink-600" href="/">
+            <div class=" pb-0 py-20 max-w-64">
+                <ul class="text-lg font-medium space-y-2  ">
+                    <li class ="flex items-center rounded py-3 pl-3 max-h-12 text-gray-50 hover:bg-pink-600" >
+                        <img class="style-image w-1/6 h-1/6 items-center" src="https://static.thenounproject.com/png/251451-200.png" alt="Image Description">
+                        <a class="pl-4" href="/">
                             <span class="select-none">Back</span>
                         </a>
                     </li>
-                    <li>
-                        <a class="flex items-center rounded py-3 pl-3 pr-4 text-gray-50 hover:bg-pink-600" href="/Mobil">
+                    <li class ="flex items-center rounded py-3 pl-3 max-h-12  text-gray-50 hover:bg-pink-600">
+                        <img class="style-image w-1/6 h-1/6 items-center" src="https://www.svgrepo.com/show/115873/car.svg" alt="Image Description">
+                        <a class="pl-4" href="/Mobil">
                             <span class="select-none">Mobil</span>
                         </a>
                     </li>

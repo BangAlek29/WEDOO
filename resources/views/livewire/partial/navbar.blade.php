@@ -18,7 +18,9 @@
                 <li><a wire:navigate href="/vendor" class="text-black hover:text-gray-700">HOME</a></li>
                 <li><a href="/transaksi" class="text-gray-400 hover:text-gray-700">TRANSAKSI</a></li>
                 <li><a href="/contact" class="text-gray-400 hover:text-gray-700">CONTACT</a></li>
-                <li><a href="/" class="text-gray-400 hover:text-gray-700">LOGIN</a></li>
+                <nav class="-mx-3 flex flex-1 justify-end">
+                    
+                </nav>                
             </ul>
         </div>
     </nav>
