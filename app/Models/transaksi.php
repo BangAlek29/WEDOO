@@ -1,12 +1,13 @@
 <?php
 
+
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\DB;
 
-class transaksi extends Model
+class Transaksi extends Model
 {
     use HasFactory;
 
@@ -50,4 +51,10 @@ class transaksi extends Model
 
         return $newId;
     }
+
+    public function vendors()
+    {
+        return $this->belongsToMany(Vendor::class, 'transaksi_vendor', 'id_transaksi', 'id_vendor');
+    }
 }
+

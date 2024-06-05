@@ -18,7 +18,6 @@ use App\Livewire\dokumentasis;
 use App\Livewire\entertainments;
 use App\Livewire\istri;
 use App\Livewire\suami;
-use App\Livewire\DetailTransaksi;
 
 
 Route::get('/catering', Caterings::class);
