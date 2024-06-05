@@ -3,46 +3,38 @@
 namespace App\Livewire;
 
 use App\Models\Vendor;
-use App\Models\pelanggan;
+use App\Models\Pelanggan;
 use Livewire\Component;
-use Livewire\Attributes\layout;
+use Livewire\Attributes\Layout;
 
-#[layout('layout.appvendor')]
+#[Layout('layouts.appvendor')]
 class Vendors extends Component
 {
     public $vendors;
+    public $selectedVendorId;
+    public $transactionId;
 
-    public function mount()
+    public function mount($transactionId)
     {
+        $this->transactionId = $transactionId;
         $this->vendors = Vendor::all();
     }
 
     public function render()
     {
-        return view('livewire.vendor');
+        return view('livewire.vendor', [
+            'vendors' => $this->vendors,
+        ]);
     }
 
     public function selectVendor($vendorId)
     {
-        $this->vendors = $vendorId;
+        $this->selectedVendorId = $vendorId;
 
-        // Ambil pelanggan berdasarkan user yang sedang login
-        $pelanggan = Pelanggan::where('id_pelanggan')->first();
+        $transaction = Transaksi::findOrFail($this->transactionId);
+        $transaction->vendors()->attach($vendorId);
 
-        if ($pelanggan) {
-            // Update kolom id_vendor di tabel pelanggan
-            $pelanggan->update(['id_vendor' => $vendorId]);
-        } else {
-            // Jika pelanggan belum ada, Anda dapat membuatnya
-            Pelanggan::create([
-                'id_pelanggan',
-                'id_vendor' => $vendorId,
-                // Tambahkan kolom lain yang diperlukan
-            ]);
-        }
-
-        // Emit sebuah event atau mengarahkan ke halaman lain jika perlu
-        // $this->emit('vendorSelected', $vendorId);
-        // return redirect()->route('some.route');
+        // Emit an event or redirect if necessary
+        $this->emit('vendorSelected', $vendorId);
     }
 }

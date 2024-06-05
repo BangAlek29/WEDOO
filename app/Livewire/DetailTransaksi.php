@@ -3,22 +3,30 @@
 namespace App\Livewire;
 
 use Livewire\Component;
-use Livewire\Attributes\layout;
-use App\Models\vendor;
+use App\Models\Transaksi;
+use Livewire\Attributes\Layout;
 
-#[layout('layout.appvendor')]
+#[Layout('layouts.appvendor')]
 class DetailTransaksi extends Component
 {
-    public $vendors;
+    public $transactionId;
+    public $transaction;
 
-    public function mount()
+    public function mount($transactionId)
     {
-        $this->vendors = Vendor::all();
+        $this->transactionId = $transactionId;
+        $this->loadTransaction();
+    }
+
+    public function loadTransaction()
+    {
+        $this->transaction = Transaksi::with('vendors')->findOrFail($this->transactionId);
     }
 
     public function render()
     {
-
-        return view('livewire.detail-transaksi');
+        return view('livewire.detail-transaksi', [
+            'transaction' => $this->transaction,
+        ]);
     }
 }
