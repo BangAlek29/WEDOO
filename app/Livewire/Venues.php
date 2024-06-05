@@ -10,6 +10,7 @@ use Livewire\Attributes\layout;
 class Venues extends Component
 {
     public $venues;
+    public $venue = null;
 
     public function mount()
     {

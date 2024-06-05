@@ -1,18 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WEDOO</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <style>
-        .navbar-bg {
-            background-color: #D9D9D9; /* Light grey color */
-        }
-    </style>
-</head>
-<body class="bg-pink-100">
-<section class="relative flex flex-wrap lg:h-screen lg:items-center">
+<div class="relative flex flex-wrap lg:h-screen lg:items-center">
   <div class="w-full px-4 py-12 sm:px-6 sm:py-16 lg:w-1/2 lg:px-8 lg:py-24">
     <div class="mx-auto max-w-lg text-center">
       <h1 class="text-2xl font-bold sm:text-3xl">Get started today!</h1>
@@ -111,6 +97,4 @@
       class="absolute inset-0 h-full w-full object-cover"
     />
   </div>
-</section>
-</body>
-</html>
+</div>

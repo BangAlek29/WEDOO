@@ -38,9 +38,10 @@ class VenueResource extends Resource
                     TextInput::make('biaya')
                         ->prefix('RP')->required()->mask(RawJs::make('$money($input)'))->stripCharacters(',')->numeric()->default(1000000),
                     TextInput::make('tipe')
-                        ->required(),
+                    ->required(),
                     RichEditor::make('deskripsi')
-                        ->columnSpanFull(),
+                    ->columnSpanFull(),
+                    TextInput::make('image_url'),
                     ])
             ]);
     }

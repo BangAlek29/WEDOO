@@ -40,34 +40,34 @@ class VendorResource extends Resource
                 TextInput::make('nama')->required(),
                 Select::make('id_venue')
                     ->relationship('venue', 'id_venue')
-                    ->required(),
+                    ,
                 Select::make('id_souvenir')
                     ->relationship('souvenir', 'nama')
-                    ->required(),
+                    ,
                 Select::make('id_penghulu')
                     ->relationship('penghulu', 'nama')
-                    ->required(),
+                    ,
                 Select::make('id_mc')
                     ->relationship('mc', 'nama')
-                    ->required(),
+                    ,
                 Select::make('id_mobil')
                     ->relationship('mobil', 'nama_mobil')
-                    ->required(),
+                    ,
                 Select::make('id_akomodasi')
                     ->relationship('akomodasi', 'nama')
-                    ->required(),
+                    ,
                 Select::make('id_dokumentasi')
                     ->relationship('Dokumentasi', 'nama')
-                    ->required(),
+                    ,
                 Select::make('id_catering')
                     ->relationship('catering', 'nama')
-                    ->required(),
+                    ,
                 Select::make('id_entertainment')
                     ->relationship('entertainment', 'nama')
-                    ->required(),
+                    ,
                 Select::make('id_perias')
                     ->relationship('perias', 'nama')
-                    ->required(),
+                    ,
             ]);
     }
 

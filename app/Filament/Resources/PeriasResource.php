@@ -38,9 +38,10 @@ class PeriasResource extends Resource
                             'Tunggu' => 'info',
                             'Habis' => 'warning',
                             'Tersedia' => 'success',
-                        ])
-                        ->inline(),
-                        RichEditor::make('deskripsi')->nullable(),                        
+                            ])
+                            ->inline(),
+                            RichEditor::make('deskripsi')->nullable(),                        
+                            TextInput::make('image_url'),
                     ])
             ]);
     }

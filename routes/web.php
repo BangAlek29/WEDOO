@@ -14,6 +14,8 @@ use App\Livewire\Auth\Login;
 use App\Livewire\Auth\Register;
 use App\Livewire\dokumentasis;
 use App\Livewire\entertainments;
+use App\Livewire\Istri;
+use App\Livewire\Suami;
 use Illuminate\Support\Facades\Route;
 
 
@@ -31,6 +33,8 @@ Route::get('/transaksi', Transaksi::class);
 Route::get('/contact', Contact::class);
 Route::get('/login', Login::class);
 Route::get('/register', Register::class);
+Route::get('/istri', Istri::class);
+Route::get('/suami', Suami::class);
 
 
 

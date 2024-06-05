@@ -19,6 +19,7 @@ class MC extends Model
 
     protected $fillable = [
         'id_mc',
+        'image_url',
         'nama',
         'kontak',
         'biaya',
